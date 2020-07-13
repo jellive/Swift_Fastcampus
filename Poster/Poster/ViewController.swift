@@ -34,5 +34,13 @@ class ViewController: UIViewController {
         present(vc, animated: true, completion: nil)
     }
     
+
+    @IBAction func challenge(_ sender: Any) {
+        let vc: UIAlertController = UIAlertController.init(title: "Hello", message: "Do jeon", preferredStyle: .alert)
+        vc.addAction(.init(title: "ok", style: .default, handler: { action in
+            print(action.title!)
+        }))
+        present(vc, animated: true, completion: nil)
+    }
 }
 

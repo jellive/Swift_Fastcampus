@@ -22,11 +22,22 @@
                                     <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DtP-jT-Flk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLH-Hs-F8o">
+                                <rect key="frame" x="191.5" y="669" width="31" height="30"/>
+                                <state key="normal" title="도전!">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="challenge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XeZ-Yx-mWw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ghJ-Sc-49H" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="1uO-qy-pPM"/>
+                            <constraint firstItem="rLH-Hs-F8o" firstAttribute="centerX" secondItem="ghJ-Sc-49H" secondAttribute="centerX" id="5ee-2z-KBY"/>
                             <constraint firstItem="ghJ-Sc-49H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5ic-uQ-Vxa"/>
+                            <constraint firstItem="rLH-Hs-F8o" firstAttribute="top" secondItem="ghJ-Sc-49H" secondAttribute="bottom" constant="201" id="dy5-sb-CZR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
