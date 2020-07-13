@@ -27,20 +27,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonClicked(_ sender: Any) {
-        let vc: UIAlertController = UIAlertController.init(title: "경고", message: "눌렀구나", preferredStyle: .alert)
-        vc.addAction(.init(title: "가즈아", style: .default, handler: { action in
+        let alert: UIAlertController = UIAlertController.init(title: "경고", message: "눌렀구나", preferredStyle: .alert)
+        alert.addAction(.init(title: "가즈아", style: .default, handler: { action in
             print(action.title!)
         }))
-        present(vc, animated: true, completion: nil)
-    }
-    
-
-    @IBAction func challenge(_ sender: Any) {
-        let vc: UIAlertController = UIAlertController.init(title: "Hello", message: "Do jeon", preferredStyle: .alert)
-        vc.addAction(.init(title: "ok", style: .default, handler: { action in
-            print(action.title!)
-        }))
-        present(vc, animated: true, completion: nil)
+        present(alert, animated: true, completion: nil)
     }
 }
 
