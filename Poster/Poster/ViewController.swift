@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         gogo = "1"
         gogo = "2"
-        bountyLabel.text = "₩ \(currentValue)"
+        self.refresh()
     }
 
     @IBAction func buttonClicked(_ sender: Any) {
@@ -45,10 +45,14 @@ class ViewController: UIViewController {
         let action = UIAlertAction(title: "ok", style: .default, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
+        self.refresh()
+    }
+    
+    func refresh(){
         let randomNum = arc4random_uniform(100000) + 1
         currentValue = Int(randomNum)
         bountyLabel.text = "₩ \(currentValue)"
+        
     }
     
 }
